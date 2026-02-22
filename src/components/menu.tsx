@@ -6,7 +6,7 @@ export interface IMenu {
 export function Menu() {
     const { pathname } = useLocation()
     const routeSelected = pathname
-    console.log('location', location)
+ 
 
     const selectedCss = 'py-2 px-4 rounded-xl bg-amber-500 text-zinc-50'
     return (
@@ -14,10 +14,9 @@ export function Menu() {
             <h1 className="font-serif tracking-tight">Sistema<span className="text-amber-500">.</span></h1>
             <ul className="flex gap-6 font-sans">
                 <li className=" hover:text-zinc-50 text-zinc-400 rounded-xl "><NavLink to="/" className={`${routeSelected === '/' ? selectedCss : ''}`}>Início</NavLink></li>
-                <li className=" hover:text-zinc-50 text-zinc-400 rounded-xl"><NavLink to="/sobre" className={`${routeSelected === '/sobre' ? selectedCss : ''}`}>Sobre</NavLink></li>
-                <li className=" hover:text-zinc-50 text-zinc-400 rounded-xl"><NavLink to="/servicos" className={`${routeSelected === '/servicos' ? selectedCss : ''}`}>Serviços</NavLink></li>
-                <li className=" hover:text-zinc-50 text-zinc-400 rounded-xl"><NavLink to="/portfolio" className={`${routeSelected === '/portfolio' ? selectedCss : ''}`}>Portfólio</NavLink></li>
-                <li className=" hover:text-zinc-50 text-zinc-400 rounded-xl"><NavLink to="/contato" className={`${routeSelected === '/contato' ? selectedCss : ''}`}>Contato</NavLink></li>
+                <li className=" hover:text-zinc-50 text-zinc-400 rounded-xl"><NavLink to="/sobre" className={`${routeSelected === '/TaskMaster' ? selectedCss : ''}`}>TaskMaster</NavLink></li>
+                <li className=" hover:text-zinc-50 text-zinc-400 rounded-xl"><NavLink to="/servicos" className={`${routeSelected === '/ConnectHub' ? selectedCss : ''}`}>ConnectHub</NavLink></li>
+                <li className=" hover:text-zinc-50 text-zinc-400 rounded-xl"><NavLink to="/portfolio" className={`${routeSelected === '/MoneyFlow' ? selectedCss : ''}`}>MoneyFlow</NavLink></li>
             </ul>
         </nav>
     )
