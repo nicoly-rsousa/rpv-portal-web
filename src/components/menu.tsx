@@ -14,9 +14,9 @@ export function Menu() {
             <h1 className="font-serif tracking-tight">Sistema<span className="text-amber-500">.</span></h1>
             <ul className="flex gap-6 font-sans">
                 <li className=" hover:text-zinc-50 text-zinc-400 rounded-xl "><NavLink to="/" className={`${routeSelected === '/' ? selectedCss : ''}`}>Início</NavLink></li>
-                <li className=" hover:text-zinc-50 text-zinc-400 rounded-xl"><NavLink to="/sobre" className={`${routeSelected === '/TaskMaster' ? selectedCss : ''}`}>TaskMaster</NavLink></li>
-                <li className=" hover:text-zinc-50 text-zinc-400 rounded-xl"><NavLink to="/servicos" className={`${routeSelected === '/ConnectHub' ? selectedCss : ''}`}>ConnectHub</NavLink></li>
-                <li className=" hover:text-zinc-50 text-zinc-400 rounded-xl"><NavLink to="/portfolio" className={`${routeSelected === '/MoneyFlow' ? selectedCss : ''}`}>MoneyFlow</NavLink></li>
+                <li className=" hover:text-zinc-50 text-zinc-400 rounded-xl"><NavLink to="/Taskmaster" className={`${routeSelected === '/TaskMaster' ? selectedCss : ''}`}>TaskMaster</NavLink></li>
+                <li className=" hover:text-zinc-50 text-zinc-400 rounded-xl"><NavLink to="/ConnectHub" className={`${routeSelected === '/ConnectHub' ? selectedCss : ''}`}>ConnectHub</NavLink></li>
+                <li className=" hover:text-zinc-50 text-zinc-400 rounded-xl"><NavLink to="/Moneyflow" className={`${routeSelected === '/MoneyFlow' ? selectedCss : ''}`}>MoneyFlow</NavLink></li>
             </ul>
         </nav>
     )
