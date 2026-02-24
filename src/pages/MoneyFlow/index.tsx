@@ -1,4 +1,3 @@
-// Importações das bibliotecas necessárias
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { moneySchema } from '../../schemas/moneySchema'
@@ -20,14 +19,14 @@ export function MoneyFlow() {
     useEffect(() => {
         const salvo = localStorage.getItem('money')
         if (salvo) {
-            setMoney(JSON.parse(salvo))
+            setMoney(JSON.parse(salvo)) //converte texto para objeto novamente
         }
     }, [])
 
 
     useEffect(() => {
         localStorage.setItem('money', JSON.stringify(money))
-    }, [money])
+    }, [money]) //toda vez que o money mudar, ele salva no localStorage, convertendo o objeto para texto
 
     const saldoTotal = money.reduce((acumulador, transacao) => {
         if (transacao.tipo === 'entrada') {
@@ -35,7 +34,7 @@ export function MoneyFlow() {
         } else {
             return acumulador - transacao.valor
         }
-    }, 0)
+    }, 0)// reduce Transforma um array inteiro em um único valor final.
 
 
     function onSubmit(data: MoneyFormData) {
