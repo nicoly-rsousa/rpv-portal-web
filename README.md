@@ -175,16 +175,4 @@ O **portal web** centraliza ferramentas de produtividade pessoal em um único lu
 | LocalStorage API | Persistência de dados |
 
 ---
-
-## 🚀 Como Executar
-
-```bash
-# Instalar dependências
-npm install
-
-# Executar em desenvolvimento
-npm run dev
-
-# Build para produção
-npm run build
-```
+Acesse: https://nicoly-rsousa.github.io/rpv-portal-web/

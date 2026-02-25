@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
-import { Home } from './pages/Home'
+import { Home } from './pages/home'
 import { ConnectHub } from './pages/ConnectHub'
 import { MoneyFlow } from './pages/MoneyFlow'
 import { TaskMaster } from './pages/TaskMaster'
