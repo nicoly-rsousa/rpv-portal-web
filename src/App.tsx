@@ -6,7 +6,7 @@ import { TaskMaster } from './pages/TaskMaster'
 import { Menu } from './components/menu'
 export function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/rpv-portal-web/">
             <Menu />
             <Routes>
                 <Route path='/' element={<Home />} />
